@@ -8,6 +8,51 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<h1>Job Application Form</h1>
+  <form method="post" action="process_application.php">
+    <label for="name">Name*:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+
+    <label for="email">Email*:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+
+    <label for="gender">Gender*:</label>
+    <br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br>
+
+    <label for="laptop">Laptop Brand:</label>
+    <select id="laptop" name="laptop">
+      <option value="">Select Brand</option>
+      <option value="apple">Apple</option>
+      <option value="asus">Asus</option>
+      <option value="hp">HP</option>
+    </select>
+    <br>
+
+    <label for="age">Laptop Age*:</label>
+    <input type="number" id="age" name="age" required>
+    <br>
+
+    <label for="dob">Date of Birth*:</label>
+    <input type="date" id="dob" name="dob" required>
+    <br>
+
+    <label for="password">Password*:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+
+    <label for="portfolio">Portfolio URL:</label>
+    <input type="url" id="portfolio" name="portfolio">  <br>
+
+    <button type="submit">Apply Now</button>
+  </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
